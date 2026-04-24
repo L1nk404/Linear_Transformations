@@ -188,7 +188,8 @@ void print_parameters(int n, Point *p)
     // If phi is multiple of 2*PI
     if (fmod(p->phi, 2 * PI) == 0)
         fprintf(stdout,
-                "Ãngulo de rotação: " ANSI_GREEN "%.2lf" ANSI_RESET " π\n\n",
+                "Ãngulo de rotação: " ANSI_GREEN "%.2lf" ANSI_RESET
+                " π rad\n\n",
                 p->phi / PI);
     else
         fprintf(stdout, "Ângulo de rotação: %.2lf π\n\n", p->phi / PI);
