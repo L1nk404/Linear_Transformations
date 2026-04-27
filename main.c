@@ -327,19 +327,6 @@ int main()
                         point.s_y = point.s_y - 10;
                         break;
 
-                    // Bouncy Simulations
-                    case SDLK_SPACE:
-                        // if not circle
-                        if (point.s_x != point.s_y)
-                        {
-                            fprintf(stdout, "Figura deve ser um círculo: "
-                                            "Escala X = Escala Y\n");
-                            break;
-                        }
-                        else
-                            printf("passou\n");
-                        break;
-
                     // Reset ========
                     case SDLK_r:
                         // R
